@@ -3,15 +3,13 @@ package com.lec.ex12_account;
 public class Account {
 	private String accountNo;
 	private String ownerName;
-	private String cardNo;
 	private int balance;
 	public Account() {}
 	public Account(String accountNo, String ownerName) {
 		this.accountNo = accountNo;
 		this.ownerName = ownerName;
 	}
-	public Account(String cardNo ,String accountNo, String onwerName, int balance) {
-		this.cardNo = cardNo;
+	public Account(String accountNo, String onwerName, int balance) {
 		this.accountNo = accountNo;
 		this.ownerName = onwerName;
 		this.balance = balance;
@@ -27,15 +25,9 @@ public class Account {
 			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
 		}
 	}
-	public void info() {
-		System.out.println("Ä«µå¹øÈ£ : "+cardNo+"°èÁÂ¹øÈ£:"+accountNo+","+ownerName+"´Ô ÀÜ¾×Àº" + balance);
+	public void printAccount() {
+		System.out.println("°èÁÂ¹øÈ£:"+accountNo+","+ownerName+"´Ô ÀÜ¾×Àº" + balance);
 		
-	}
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
-	public String getCardNo() {
-		return cardNo;
 	}
 	public String getAccountNo() {
 		return accountNo;
