@@ -6,5 +6,7 @@ public final class Dog extends Animal {
 		speed += 10;
 		System.out.println("강아지가 뛰면서 꼬리를 흔들어요. 현재 속도 : "+speed);
 	}
-	
+	public void method() {
+		System.out.println("method()");
+	}
 }
